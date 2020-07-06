@@ -1,0 +1,198 @@
+#wrapper_two .content{
+    grid-area: "content";
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "box1 box2 box3 box4";
+    grid-gap: 3vw;
+}
+
+.box {
+    border-radius: 20px;  
+    width: 100%;  
+    clip-path: circle(2.8vh at 15.1vw 28vh);
+    transition: clip-path .5s ease-in-out;
+    background: #2CFFEA;
+    opacity: 0;
+}
+
+.boxtext{
+    width: 79%;
+    padding-bottom: 2vh;
+    justify-self: center;
+    align-self: end;
+}
+
+.outerbox {
+    grid-area: box1;
+    z-index: 2;
+    height: 45%;
+}
+
+.outerbox .smallheading {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.info {
+    cursor: pointer;
+    color: #1c273c;
+    font-size: 12pt;
+    font-family: "Poppins";
+    font-weight: 700;
+    margin-left: 12.6vw;
+    text-align: center;
+    height: auto;
+    background: yellow;
+    width: auto;
+    margin-top:25vh;
+    cursor: pointer;
+    padding-top: 1.2vh;
+}
+
+.outerbox .cons{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 55%;
+    margin: auto;
+    margin-top: 10%;
+    filter: drop-shadow(0px 0px 5px rgb(44, 255, 234, 0.6));
+}
+
+/* ---------- box1 ---------- */
+
+#box1 {
+    grid-area: box1;
+    display: grid;
+}
+
+#outerbox_1 {
+    grid-area: box1;
+}
+
+#cons_1 {
+    background-image: url(pictures/virus.png); 
+}
+
+/* ---------- box2 ---------- */
+
+#box2 {
+    grid-area: box2;
+    display: grid;
+}
+
+#outerbox_2 {
+    grid-area: box2;
+}
+
+#cons_2 {
+    background-image: url(pictures/hunger.png); 
+}
+
+/* ---------- box3 ---------- */
+
+#box3 {
+    grid-area: box3;
+    display: grid;
+}
+
+#outerbox_3 {
+    grid-area: box3;
+}
+
+#cons_3 {
+    background-image: url(pictures/gun.png); 
+}
+
+/* ---------- box4 ---------- */
+
+#box4 {
+    grid-area: box4;
+    display: grid;
+}
+
+#outerbox_4 {
+    grid-area: box4;
+}
+
+#cons_4 {
+    background-image: url(pictures/lake.png); 
+}
+
+
+/* <!--------- Section2_Was bedeutet Wasserknappheit? ---------->
+
+<section class="sec">
+    <div class="banner" id="banner_two">
+        <div class="background_picture"></div>
+        <h1 class="chapter">2</h1>
+        <h1 class="chapter_title" id="chapter_title_two"><span>WAS<br></span><span>BEDEUTET<br></span><span
+                class="blue">WASSER<br></span><span class="blue">KNAPPHEIT?<br></span></h1>
+    </div>
+</section>
+
+<section id="section_two" class="sec">
+    <div class="wrapper" id="wrapper_two">
+        <div class="text">
+            <h2>Was bedeutet Wasserknappheit?</h2>
+            <p class="bodytext">Trockenheit und Dürren haben schwerwiegende Folgen und machen der Welt zunehmend zu
+                schaffen. Nicht nur die Natur, sondern auch die Menschheit leidet in vielerlei Hinsicht stark
+                darunter. Bereits heute sind rund 3.6 Milliarden Menschen von Wasserknappheit betroffen. Das ist
+                fast die Hälfte der Weltbevölkerung. Eine erschreckende Zahl, insbesondere dann wenn man auf die
+                möglichen Folgen von Wasserknappheit blickt. </p>
+        </div>
+        <div class="content">
+
+            <div id="box1" class="box">
+                <div class="info" id="info_1">i</div>
+                <p class="bodytext boxtext">In Regionen mit Wassermangel beziehen Menschen häufig Wasser aus unsauberen
+                    Quellen. 5 Millionen Menschen sterben jedes Jahr durch verseuchtes Trinkwasser. Ohne Zugang zu
+                    sauberem Wasser wird auch die Körperhygiene zu einem Problem. Denn durch mangelnde Hygiene
+                    breiten sich Krankheiten extrem schnell aus. </p>
+            </div>
+            <div class="outerbox" id="outerbox_1">
+                <p class="smallheading">mangelnde Hygiene</p>
+                <div class="cons" id="cons_1"></div>
+            </div>
+
+            <div id="box2" class="box">
+                <p class="info" id="info_2">i</p>
+                <p class="bodytext boxtext">In Regionen mit Wassermangel beziehen Menschen häufig Wasser aus unsauberen
+                    Quellen. 5 Millionen Menschen sterben jedes Jahr durch verseuchtes Trinkwasser. Ohne Zugang zu
+                    sauberem Wasser wird auch die Körperhygiene zu einem Problem. Denn durch mangelnde Hygiene
+                    breiten sich Krankheiten extrem schnell aus.</p>
+            </div>
+            <div class="outerbox" id="outerbox_2">
+                <p class="smallheading">Menschen verhungern</p>
+                <div class="cons" id="cons_2"></div>
+            </div>
+
+            <div id="box3" class="box">
+                <p class="info" id="info_3">i</p>
+                <p class="bodytext boxtext">In Regionen mit Wassermangel beziehen Menschen häufig Wasser aus unsauberen
+                    Quellen. 5 Millionen Menschen sterben jedes Jahr durch verseuchtes Trinkwasser. Ohne Zugang zu
+                    sauberem Wasser wird auch die Körperhygiene zu einem Problem. Denn durch mangelnde Hygiene
+                    breiten sich Krankheiten extrem schnell aus.</p>
+            </div>
+            <div class="outerbox" id="outerbox_3">
+                <p class="smallheading">bewaffnete Konflikte</p>
+                <div class="cons" id="cons_3"></div>
+            </div>
+
+            <div id="box4" class="box">
+                <p class="info" id="info_4">i</p>
+                <p class="bodytext boxtext">In Regionen mit Wassermangel beziehen Menschen häufig Wasser aus unsauberen
+                    Quellen. 5 Millionen Menschen sterben jedes Jahr durch verseuchtes Trinkwasser. Ohne Zugang zu
+                    sauberem Wasser wird auch die Körperhygiene zu einem Problem. Denn durch mangelnde Hygiene
+                    breiten sich Krankheiten extrem schnell aus.</p>
+            </div>
+            <div class="outerbox" id="outerbox_4">
+                <p class="smallheading">Seen trocknen aus</p>
+                <div class="cons" id="cons_4"></div>
+            </div>
+        </div>
+</section> */

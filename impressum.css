@@ -1,0 +1,77 @@
+#section_impressum {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.light {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+#wrapper_impressum .content{
+    grid-area: "content";
+    display: grid;
+    width: 100%;
+    height: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto auto 50px;
+    grid-template-areas:
+    "impOne"
+    "impTwo"
+    "impThree"
+    "impFour"
+    "impFive"
+    "impSix"
+    "impSeven"
+    "impEight"
+    "imp";
+    margin-bottom: 5vh;
+}
+
+#wrapper_impressum{
+    height: auto;
+    grid-template-rows: 100px auto;
+}
+
+#impOne {
+    grid-area: impOne;
+}
+
+
+#impTwo {
+    grid-area: impTwo;
+}
+
+#impThree {
+    grid-area: impThree;
+}
+
+#impFour {
+    grid-area: impFour;
+}
+
+#impFive {
+    grid-area: impFive;
+}
+
+#impSix {
+    grid-area: impSix;
+}
+
+#impSeven {
+    grid-area: impSeven;
+}
+
+#impEight {
+    grid-area: impEight;
+}
+
+#imp {
+    grid-area: imp;
+}

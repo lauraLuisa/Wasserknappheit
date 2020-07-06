@@ -1,0 +1,10 @@
+<svg id="navigationbar" data-name="navigationbar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 539"><defs><style>.line{fill:none;stroke:#797b80;stroke-miterlimit:10;stroke-width:0.5px;}.dot{fill:#3d4664;}</style></defs>
+<line class="line" x1="3.5" y1="3.5" x2="3.5" y2="536.5"/>
+<circle class="dot" cx="3.5" cy="535.5" r="3.5"/>
+<circle class="dot" cx="3.5" cy="459.5" r="3.5"/>
+<circle class="dot" cx="3.5" cy="383.5" r="3.5"/>
+<circle class="dot" cx="3.5" cy="307.5" r="3.5"/>
+<circle class="dot" cx="3.5" cy="231.5" r="3.5"/>
+<circle class="dot" cx="3.5" cy="155.5" r="3.5"/>
+<circle class="dot" cx="3.5" cy="79.5" r="3.5"/>
+<circle class="dot" cx="3.5" cy="3.5" r="3.5"/></svg>

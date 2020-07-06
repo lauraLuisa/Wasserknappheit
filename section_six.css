@@ -1,0 +1,173 @@
+#wrapper_six .text{
+    display: grid;
+    gap:5vw;
+    width: 100%;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "directText indirectText";
+}
+
+#directText {
+    grid-area: directText;
+    justify-self: start;
+}
+
+#indirectText {
+    grid-area: indirectText;
+    justify-self: start;
+}
+
+#wrapper_six .content{
+    grid-area: "content";
+    display: grid;
+    width: 100%;
+    column-gap: 5vw;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 50px auto auto auto;
+    grid-template-areas:
+    "directH indirectH"
+    "directFirst indirectFirst"
+    "directSecond indirectSecond"
+    "directThird indirectThird";
+    margin-bottom: 50px;
+    height: 40vh;
+}
+
+#content_six {
+    opacity: 0;
+}
+
+/* ---------- unterstrichene Überschrift --------- */
+
+#wrapper_six hr {
+    margin-top: 10px;
+    width: 340px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.use{
+    font-weight: 300;
+}
+
+.use span {
+    font-weight: 800;
+    margin-right: 0;
+}
+
+/* ---------- Text styling --------- */
+
+#wrapper_six .bigtext {
+    height: 0;
+    margin-top: 0;
+}
+
+#wrapper_six .exsmallheading {
+    margin-bottom: 0;
+    color: #465172;
+    padding-top: 2vh;
+}
+
+/* ---------- Überschrift --------- */
+
+#directH {
+    grid-area: directH;
+    line-height: 2px;
+}
+
+
+#indirectH {
+    grid-area: indirectH;
+    line-height: 2px;
+}
+
+/* ---------- erste Reihe (Indien) --------- */
+
+#directFirst {
+    grid-area: directFirst;
+    align-self: end;
+    cursor: pointer;
+}
+
+#indirectFirst {
+    grid-area: indirectFirst;
+    align-self: end;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "indirect_1 percent_1";
+    cursor: pointer;
+}
+
+#indirect_1 {
+    grid-area: indirect_1;
+}
+
+#percent_1 {
+    grid-area: percent_1;
+}
+
+/* ---------- zweite Reihe (Deutschland) --------- */
+
+#directSecond {
+    grid-area: directSecond;
+    align-self: end;
+    cursor: pointer;
+}
+
+#indirectSecond {
+    grid-area: indirectSecond;
+    align-self: end;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "indirect_2 percent_2";
+    cursor: pointer;
+}
+
+#indirect_2 {
+    grid-area: indirect_2;
+}
+
+#percent_2 {
+    grid-area: percent_2;
+}
+
+/* ---------- dritte Reihe (USA) --------- */
+
+#directThird {
+    grid-area: directThird;
+    align-self: end;
+    cursor: pointer;
+}
+
+#indirectThird {
+    grid-area: indirectThird;
+    align-self: end;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "indirect_3 percent_3";
+    cursor: pointer;
+}
+
+#indirect_3 {
+    grid-area: indirect_3;
+}
+
+#percent_3 {
+    grid-area: percent_3;
+}
+
+@media only screen and (min-width: 1024px ) and (max-width: 1280px ) {
+    #wrapper_six hr {
+        width: 280px;
+    }
+}
+
+@media only screen and (min-width: 1680px ) {
+    #wrapper_six hr {
+        width: 465px;
+    }
+}

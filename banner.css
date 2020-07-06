@@ -1,0 +1,110 @@
+.banner {
+height: 70vh;
+margin-top: 19vh;
+margin-left: 11vw;
+margin-right: 10vw;
+display: grid;
+grid-template-columns: 90px auto 90px;
+grid-template-rows: 1fr;
+}
+
+.background_picture {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+
+#banner_one .background_picture {
+    background-image: url(pictures/s1.png);
+}
+
+#banner_two .background_picture {
+    background-image: url(pictures/s2.png);
+    background-position-y: center;
+}
+
+#banner_three .background_picture {
+    background-image: url(pictures/s3.png);
+}
+
+#banner_four .background_picture {
+    background-image: url(pictures/s4.png);
+}
+
+#banner_five .background_picture {
+    background-image: url(pictures/s5.png);
+}
+
+#banner_six .background_picture {
+    background-image: url(pictures/s6.png);
+}
+
+#banner_seven .background_picture {
+    background-image: url(pictures/s7.png);
+}
+
+#banner_eight .background_picture {
+    background-image: url(pictures/s8.png);
+}
+
+.chapter {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row: 1;
+    align-self: start;
+    margin-top: 20px;
+    justify-self: center;
+}
+
+.chapter_title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    align-self: center;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.fly_in {
+    animation: fly 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly{
+    0% {transform: translateX(-100%);
+        opacity: 0;}
+
+    100% {transform: translateX(0);
+           opacity: 1;}
+}
+
+.chapter_title span {
+    background: rgb(28,39,60);
+    background: linear-gradient(90deg, rgba(28,39,60,0) 4%, rgba(28,39,60,1) 18%);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.blue {
+    color:#2CFFEA;
+}
+
+/* @media only screen and (max-width: 1280px ) {
+    
+    .banner {
+        margin-left: 115px;
+        margin-right: 115px;
+        }
+} */
+
+@media only screen and (min-width: 1024px ) and (max-width: 1280px ) {
+
+    .banner {
+        height: 60vh;
+        margin-top: 22vh;
+        }
+}

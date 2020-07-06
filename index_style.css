@@ -1,0 +1,410 @@
+html{
+    scroll-snap-type: y proximity;
+    scroll-behavior: auto;
+}
+
+body{
+    background: #1c273c;
+    background: linear-gradient(6deg, rgba(28,39,60,1) 7%, rgba(52,69,103,1) 150%);
+    background-attachment: fixed;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------- biggerScreen info ---------- */
+
+#widerScreenInfo {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(pictures/info.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    display: grid;
+    grid-template-rows: 10vh auto 25vh;
+    grid-template-areas: 
+    "infoLogo"
+    "infoHeader"
+    "infoP";
+}
+
+#infoLogo {
+    grid-area: infoLogo;
+    margin-left:5vh;
+    margin-top: 5vh;
+    width: 15vh;
+}
+
+#infoHeader{
+    grid-area: infoHeader;
+    margin-left: 5vh;
+    margin-bottom: 0;
+    align-self: end;
+}
+
+#infoHeader h1 {
+    font-size: 30pt;
+    line-height: 33pt;
+    margin-bottom: 0;
+}
+
+#infoP p {
+    font-weight: 300;
+}
+
+#infoP {
+    grid-area: infoP;
+    margin-left: 5vh;
+}
+
+/* ---------- loading screen ---------- */
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c273c;
+    background: linear-gradient(6deg, rgba(28,39,60,1) 7%, rgba(52,69,103,1) 150%);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.loader.hidden {
+    animation: loaderFadeOut 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.loaderGif {
+    width: 180px;
+    height: auto;
+    text-align: center;
+}
+
+.loaderGif p {
+    color:#ffffff;
+    margin-top: 5px;
+}
+
+.loaderGif.hidden {
+    animation: loaderFadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loaderFadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* ---------- navigationsleiste und header ---------- */
+
+header {
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: 9vw auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo impressum";
+    z-index: 3;
+}
+
+#logo {
+    grid-area: "logo";
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+#impressum {
+    grid-area: "impressum";
+    margin-right: 50px;
+    margin-top: 40px;
+    font-size: 8pt;
+    cursor: pointer;
+    justify-self: end;
+    font-family: "Montserrat";
+    height: 15px;
+}
+
+#navigationbar {
+    height: 77vh;
+    margin-left: 10px;
+    margin-top: 14vh;
+    position: fixed;
+}
+
+/* ---------- body ---------- */
+
+.sec {
+    scroll-snap-align: start;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    float: left;
+    /* background: linear-gradient(5deg, rgba(29,40,62,1) 28%, rgba(29,40,62,1) 49%, 
+    rgba(32,44,67,1) 66%, rgba(52,69,103,1) 120%); */
+}
+
+h1 {
+    color: white;
+    font-family: "Poppins";
+    font-size: 45pt;
+    line-height: 52pt;
+}
+
+h2 {
+    color: white;
+    margin-top: 0px;
+    font-family: "Poppins";
+    font-size: 20pt;
+    margin-bottom: 0px;
+    line-height: 23pt;
+}
+
+.bodytext {
+    font-size: 8pt;
+    color: #A8BCCB;
+    font-weight: 300;
+    font-family: "Montserrat";
+    line-height: 12pt;
+}
+
+.smallheading {
+    color: white;
+    font-size: 11pt;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+.exsmallheading {
+    font-size: 8pt;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+.bigtext {
+    color: #465172;
+    font-family: "Poppins";
+    font-size: 48pt;
+    line-height: 51pt;
+    font-weight: 700;
+}
+
+hr {
+    color: #465172;
+}
+
+.wrapper{
+    height: 75vh;
+    margin-top: 16vh;
+    margin-left: 150px;
+    margin-right: 120px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: 
+    "text"
+    "content";
+}
+
+.text{
+    grid-area: "text";
+}
+
+.text p {
+  max-width: 525px;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    font-size: 8pt;
+    font-weight: 300;
+    font-family: "Montserrat";
+    border-style: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.active {
+    background: #2CFFEA;
+    color: #0C0C46;
+}
+
+.inactive {
+    background: #465172;
+    color: white;
+}
+
+@keyframes pop {
+    0%   {transform: translateY(80px);
+          opacity: 0;}
+    100%   {transform: translateY(0px);
+            opacity: 1;}
+  }
+  
+@keyframes pop2 {
+    0%   {transform: translateY(80px);
+          opacity: 0;}
+    100%   {transform: translateY(0px);
+            opacity: 1;}
+  }
+
+/* ---------- kleine Screens --------- */
+
+@media only screen and (min-width: 1024px ) and (max-width: 1280px ) {
+    
+    #impressum {
+        font-size: 6pt;
+    }
+
+    .loaderGif {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 38pt;
+        line-height: 43pt;
+    }
+
+    .exsmallheading {
+        font-size: 6pt;
+    }
+
+    .bigtext {
+        font-size: 39pt;
+        line-height: 39pt;
+    }
+
+    h2 {
+        font-size: 18pt;
+        line-height: 18pt;
+    }
+    
+    .bodytext {
+        font-size: 6pt;
+        line-height: 10pt;
+    }
+
+    .smallheading {
+        font-size: 9pt;
+    }
+
+    .text p {
+        max-width: 400px;
+      }
+
+    button {
+        padding: 8px 18px 8px 18px;
+        font-size: 6pt;
+        border-radius: 18px;
+    }
+
+    .wrapper{
+        height: 63vh;
+        margin-top: 20vh;
+        margin-left: 110px;
+        margin-right: 80px;
+    }
+
+    #navigationbar {
+        height: 65vh;
+        margin-top: 18vh;
+    }
+
+}
+
+/* ---------- große Screens --------- */
+
+ @media only screen and (min-width: 1680px ) {
+    
+    .wrapper{
+        margin-left: 160px;
+        margin-right: 150px;
+    }
+
+    #impressum {
+        font-size:10pt;
+    }
+
+    .loaderGif {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 60pt;
+        line-height: 70pt;
+    }
+
+    .exsmallheading {
+        font-size: 10pt;
+    }
+
+    .bigtext {
+        font-size: 60pt;
+        line-height: 65pt;
+    }
+
+    h2 {
+        font-size: 25pt;
+        line-height: 22pt;
+    }
+    
+    .bodytext {
+        font-size: 10pt;
+        line-height: 17pt;
+    }
+
+    .smallheading {
+        font-size: 15pt;
+    }
+
+    .text p {
+        max-width: 660px;
+      }
+
+    button {
+        padding: 13px 23px 13px 23px;
+        font-size: 10pt;
+        border-radius: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1023px ) {
+
+
+    #fullWebsite {
+       height: 100px;
+       display: none;
+    }
+
+    #navigationbar {
+        display: none;
+    }
+
+    #widerScreenInfo {
+        visibility: visible;
+    }
+
+
+}

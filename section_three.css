@@ -1,0 +1,185 @@
+#wrapper_three .content{
+    grid-area: "content";
+    display: grid;
+    width: 100%;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "map countries";
+}
+
+#map {
+    grid-area: map;
+    margin-right: 40px;
+    /* background: yellow; */
+}
+
+#weltkarte {
+    width: 100%;
+    /* clip-path: inset(79%);
+    transform: scale(1.7); */
+}
+
+#countries {
+    grid-area: countries;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 3vh 12vh auto;
+    grid-template-areas:
+    "ranking"
+    "stressfactor"
+    "table";
+    opacity: 0;
+}
+
+#ranking {
+    grid-area: ranking;
+}
+
+#ranking p {
+    margin-top: 0;
+}
+
+#ranking span {
+    font-weight: 300;
+}
+
+#stressfactor {
+    grid-area: stressfactor;
+    align-self: start;
+    margin-top: 3vh;
+}
+
+#extreme {
+    margin-right: 15px;
+}
+
+#table {
+    color:  #2CFFEA;
+    grid-area: table;
+    text-transform: uppercase;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh;
+    grid-template-areas:
+    "t1 t2 t3"
+    "t4 t5 t6"
+    "t7 t8 t9"
+    "t10 t11 t12"
+    "t13 t14 t15"
+    "t16 t17 t18"
+    "t19 t20 t21"
+    "t22 t23 t24"
+    "t25 t26 t27";
+}
+
+.tab p {
+    margin-top: 0;
+}
+
+#t1 {
+    grid-area: t1;
+}
+#t2 {
+    grid-area: t2;
+}
+#t3 {
+    grid-area: t3;
+}
+#t4 {
+    grid-area: t4;
+}
+#t5 {
+    grid-area: t5;
+}
+#t6 {
+    grid-area: t6;
+}
+#t7 {
+    grid-area: t7;
+}
+#t8 {
+    grid-area: t8;
+}
+#t9 {
+    grid-area: t9;
+}
+#t10 {
+    grid-area: t10;
+}
+#t11 {
+    grid-area: t11;
+}
+#t12 {
+    grid-area: t12;
+}
+#t13 {
+    grid-area: t13;
+}
+#t14 {
+    grid-area: t14;
+}
+#t15 {
+    grid-area: t15;
+}
+#t16 {
+    grid-area: t16;
+}
+#t17 {
+    grid-area: t17;
+}
+#t18 {
+    grid-area: t18;
+}
+#t19 {
+    grid-area: t19;
+}
+#t20 {
+    grid-area: t20;
+}
+#t21 {
+    grid-area: t21;
+}
+#t22 {
+    grid-area: t22;
+}
+#t23 {
+    grid-area: t23;
+}
+#t24 {
+    grid-area: t24;
+}
+#t25 {
+    grid-area: t25;
+}
+#t26 {
+    grid-area: t26;
+}
+#t27 {
+    grid-area: t27;
+}
+
+
+@media only screen and (min-width: 1024px ) and (max-width: 1280px ) {
+
+    #table {
+        grid-template-rows: 3vh 3vh 3vh 3vh 3vh 3vh 3vh 3vh 3vh;
+    }
+}
+
+@media only screen and (max-width: 1500px ) {
+
+    #wrapper_three .content{
+        grid-template-columns: 35% 65%;
+        grid-template-areas:
+        "countries map";
+     }
+ 
+     #map {
+        align-self: center;
+        margin-top: 8vh;
+     }
+
+}

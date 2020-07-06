@@ -1,0 +1,72 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;    
+}
+
+#wrapper_start {
+    position: relative;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+    "start"
+    "scroll";
+}
+
+#start {
+    justify-self: center;
+    margin-top: 50px;
+    align-self: center;
+    grid-area: start;
+}
+
+#start h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#start .bodytext {
+text-align: right;
+margin-right: 6.5vh;
+color: white;
+}
+
+#scroll_mouse {
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 50px;
+    grid-area: scroll;
+    opacity: 0%;
+}
+
+.mouse {
+    width: 2.5vw;
+    height: auto;
+}
+
+#MouseMiddle {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0%   {opacity: 0%;}
+    35%  {opacity: 100%;}
+    65%  {opacity: 100%;}
+    100% {opacity: 0%;}
+  }
+
+  @keyframes show {
+    0%   {opacity: 0%;}
+    100% {opacity: 100%;}
+  }

@@ -1,0 +1,41 @@
+#wrapper_four .content{
+    grid-area: "content";
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "typedText";
+}
+
+#typedText {
+    grid-area: typedText;
+    align-self: start;
+    text-transform: uppercase;
+}
+
+#typePrognosis span {
+    color: #2CFFEA;
+}
+
+#cursor {
+    font-weight: 600;
+    font-size: 42pt;
+    margin-left: 15px;
+}
+
+@media only screen and (min-width: 1024px ) and (max-width: 1280px ) {
+
+#cursor {
+    font-size: 33pt;
+}
+
+}
+
+@media only screen and (min-width: 1680px ) {
+
+    #cursor {
+        font-size: 60pt;
+    }
+    
+    }

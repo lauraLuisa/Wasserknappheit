@@ -1,0 +1,145 @@
+#wrapper_eight .content{
+    grid-area: "content";
+    display: grid;
+    width: 100%;
+    height: 90%;
+    column-gap: 3.2vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+    "solutions solutions null null"
+    "regional recycle meat ecological";
+}
+
+.solution {
+    display: grid;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 80px auto;
+    grid-template-areas:
+    "solutionPic"
+    "solutionHeading"
+    "solutionText";
+}
+
+
+.solutionPic {
+    grid-area: solutionPic;
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    background: #26344E;
+    box-shadow:  5px 5px 16px #182133, 
+                 -5px -5px 16px #273550;
+}
+
+.solutionPic svg {
+   width: 110px;
+   height: 110px;
+   padding: 10px;
+}
+
+
+.solutionHeading {
+    grid-area: solutionHeading;
+    text-align: center;
+    align-self: end;
+    justify-self: center;
+}
+
+.solutionText {
+    grid-area: solutionText;
+    text-align: center;
+    justify-self: center;
+}
+
+.solutionText p {
+    margin-top: 0px;
+    width: 95%;
+}
+
+#textRegional #textRecycling {
+    opacity: 0;
+}
+
+#solutions {
+    grid-area: solutions;
+}
+
+#regional {
+    grid-area: regional;
+}
+
+#recycle {
+    grid-area: recycle;
+}
+
+#meat {
+    grid-area: meat;
+}
+
+#ecological {
+    grid-area: ecological;
+}
+
+#neonFilter1, #neonFilter2, #neonFilter3, #neonFilter4{
+    opacity: 0;
+}
+
+
+@keyframes colorUp {
+    0%   {fill: #465172;}
+    100% {fill: #2CFFEA;
+    }
+  }
+
+@keyframes colorDown {
+    0%   {fill: #2CFFEA;}
+    100% {fill: #465172;
+    }
+  }
+  
+
+@keyframes glowUp {
+    0%   {opacity: 0;}
+
+    100% {opacity: 100;
+    }
+  }
+
+@keyframes glowDown {
+    0%   {opacity: 100;}
+
+    100% {opacity: 0;
+    }
+  }
+
+  
+@media only screen and (min-width: 1024px ) and (max-width: 1280px ) {
+    
+    .solutionPic {
+        margin-bottom: 0px;
+}
+}
+
+@media only screen and (min-width: 1680px ) {
+
+    .solutionPic {
+        margin-bottom: 25px;
+    }
+
+    .solution {
+        grid-template-rows: 180px 80px auto;
+        margin-top: 50px;
+    }
+    
+    .solutionPic svg {
+       width: 140px;
+       height: 140px;
+       padding: 13px;
+    }
+}

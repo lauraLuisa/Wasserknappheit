@@ -1,0 +1,103 @@
+#wrapper_five .content{
+    grid-area: "content";
+    display: grid;
+    width: 100%;
+    height: 90%;
+    margin-left: -3vw;
+    column-gap: 60px;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+    "btn_anomalie null"
+    "diagram side_text";
+}
+
+#btn_anomalie {
+    grid-area: btn_anomalie;
+    margin-left: 3vw;
+    /* background: burlywood; */
+}
+
+#side_text {
+    grid-area: side_text;
+    /* background: pink; */
+}
+
+#diagramDiv {
+    grid-area: diagram;
+    margin-top: 15px;
+    /* background: blue; */
+}
+
+/* ---------- text/button-styling ---------- */
+
+#wrapper_five span {
+    font-weight: 300;
+}
+
+#wrapper_five hr {
+    margin-top: 10px;
+    width: 290px;
+    text-align: left;
+    margin-left: 0;
+}
+
+#side_text_small {
+    width: 360px;
+}
+
+#side_text .smallheading {
+    margin-top: 0;
+}
+
+#btn18 {
+    margin-right: 15px;
+}
+
+#btn_anomalie .smallheading {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* --------- Diagramm --------- */
+    
+.diagram_rect {
+    opacity: 100%;
+    height: 0%;
+}
+
+
+/* @media only screen and (max-width: 1280px ) {
+   
+    #side_text_small {
+        width: 310px;
+    }
+
+    #wrapper_five hr {
+        width: 235px;
+    }
+} */
+
+@media only screen and (min-width: 1024px ) and (max-width: 1280px ) {
+
+    #side_text_small {
+        width: 270px;
+    }
+
+    #wrapper_five hr {
+        width: 230px;
+    }
+
+}
+
+@media only screen and (min-width: 1680px ) {
+
+    #side_text_small {
+        width: 470px;
+    }
+
+    #wrapper_five hr {
+        width: 390px;
+    }
+
+}
