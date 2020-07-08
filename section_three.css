@@ -11,13 +11,10 @@
 #map {
     grid-area: map;
     margin-right: 40px;
-    /* background: yellow; */
 }
 
 #weltkarte {
     width: 100%;
-    /* clip-path: inset(79%);
-    transform: scale(1.7); */
 }
 
 #countries {

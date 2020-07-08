@@ -26,10 +26,9 @@
 
 @media only screen and (min-width: 1024px ) and (max-width: 1280px ) {
 
-#cursor {
-    font-size: 33pt;
-}
-
+    #cursor {
+        font-size: 33pt;
+    }
 }
 
 @media only screen and (min-width: 1680px ) {
@@ -37,5 +36,4 @@
     #cursor {
         font-size: 60pt;
     }
-    
-    }
+}

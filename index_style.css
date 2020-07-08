@@ -43,7 +43,7 @@ a {
 #infoLogo {
     grid-area: infoLogo;
     margin-left:5vh;
-    margin-top: 5vh;
+    margin-top: 4.5vh;
     width: 15vh;
 }
 
@@ -161,8 +161,6 @@ header {
     min-height: 100vh;
     overflow: hidden;
     float: left;
-    /* background: linear-gradient(5deg, rgba(29,40,62,1) 28%, rgba(29,40,62,1) 49%, 
-    rgba(32,44,67,1) 66%, rgba(52,69,103,1) 120%); */
 }
 
 h1 {

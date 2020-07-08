@@ -1,4 +1,3 @@
-
 var mouse = document.getElementById("scroll_mouse");
 
 setTimeout(function () {

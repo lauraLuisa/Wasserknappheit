@@ -24,7 +24,6 @@ grid-template-rows: 1fr;
 
 #banner_two .background_picture {
     background-image: url(pictures/s2.png);
-    background-position-y: center;
 }
 
 #banner_three .background_picture {
@@ -92,14 +91,6 @@ grid-template-rows: 1fr;
 .blue {
     color:#2CFFEA;
 }
-
-/* @media only screen and (max-width: 1280px ) {
-    
-    .banner {
-        margin-left: 115px;
-        margin-right: 115px;
-        }
-} */
 
 @media only screen and (min-width: 1024px ) and (max-width: 1280px ) {
 

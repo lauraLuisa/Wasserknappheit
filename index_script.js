@@ -20,7 +20,7 @@ function hide() {
 window.addEventListener("load", function(){
     const loader = document.querySelector(".loader");
     const loaderGif = document.querySelector(".loaderGif");
-    setTimeout(function(){loader.classList+= " hidden"; loaderGif.classList+= " hidden"},2000);
+    setTimeout(function(){loader.classList+= " hidden"; loaderGif.classList+= " hidden"},1000);
 });
 
 var wrapper_start = document.getElementById('wrapper_start');
